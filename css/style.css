@@ -19,7 +19,6 @@ body {
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 20px;
     max-width: 1440px;
     margin: auto;
 }
@@ -92,16 +91,17 @@ header {
     grid-column: span 3;
 }
 
+.accommodation-cards {
+   width: 100%;
+   height: auto;
+   display: block;
+}
 
-.accomodation-cards img {
-    width: 369px;
+.accommodation-cards img {
+    width: 100%;
     height: 146px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-.accommodation .accomodation-cards {
-    flex: 1 1 300px;
 }
 
 nav a.show-more {
