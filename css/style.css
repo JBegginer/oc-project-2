@@ -238,7 +238,6 @@ form {
 
 .filters {
     display: flex;
-    align-items: center;
     gap: 10px;
 }
 
@@ -265,6 +264,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 
 }
 
@@ -395,7 +395,7 @@ footer {
 
     .filters {
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .popular-cards {
@@ -413,6 +413,14 @@ footer {
 
 }
 
+@media (768px <= width <= 1024px) {
+    .popular-cards{
+        display: flex;
+        gap: 20px;
+    }
+  
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -424,28 +432,27 @@ footer {
     flex-wrap: nowrap;
     justify-content: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-right: 0;
+    border-bottom: 3px solid #ccc; /* reserve space for border */
   }
   
+  .top-right-links:hover,
+.top-right-links:focus {
+  color: #0065FC;
+  border-bottom: 3px solid #002fff;
+}
   .top-right-links a {
     white-space: nowrap;
     display: inline-block;
-  border-bottom: 3px solid transparent; /* reserve space for border */
-  padding-bottom: 4px;
-  transition: border-color 0.3s ease, color 0.3s ease;
-  color: inherit;
-  text-decoration: none;
-  white-space: nowrap;
-  border-top: none;
-}
-
-.top-right-links a:hover,
-.top-right-links a:focus {
-  border-bottom: 3px solid #0065FC; /* visible blue border on hover */
-  color: #0065FC;
-}
-
+    padding-bottom: 10px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    border-top: none;
+    }
+    
   .accommodation-and-popular {
     display: flex;
     flex-direction: column;
@@ -496,7 +503,11 @@ footer {
     .buttons {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .budget{
+        width:48%;
     }
 
     .top-page {
