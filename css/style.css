@@ -433,14 +433,14 @@ footer {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    padding-right: 0;
-    border-bottom: 3px solid #ccc; /* reserve space for border */
+    gap: 0px;
   }
   
-  .top-right-links:hover,
-.top-right-links:focus {
+  .top-right-links a:hover,
+.top-right-links a:focus {
   color: #0065FC;
   border-bottom: 3px solid #002fff;
+  padding-top: 0px;
 }
   .top-right-links a {
     white-space: nowrap;
@@ -451,6 +451,7 @@ footer {
     text-decoration: none;
     white-space: nowrap;
     border-top: none;
+     border-bottom: 3px solid #ccc;
     }
     
   .accommodation-and-popular {
