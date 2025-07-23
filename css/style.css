@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 
 .main-container {
@@ -100,8 +100,8 @@ header {
 .accommodation-cards img {
     width: 100%;
     height: 146px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 nav a.show-more {
@@ -132,8 +132,8 @@ nav a.show-more {
 .popular-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .popular-cards .card-content {
@@ -352,6 +352,8 @@ footer {
 
 .todo-pic img {
     min-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .todo-title {
